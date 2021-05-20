@@ -31,17 +31,11 @@ book3 = 'Fooled by Randomness by Nassim Nicholas Taleb, 2001'
     frase = str(input('digite uma frase: ')).upper()
     palavra = frase.split()
     palavras_junto = ''.join(palavra)
-    palavras_junto_inverso = ''
-
-    for letra in range(len(palavras_junto) - 1, -1, -1):
-    palavras_junto_inverso += palavras_junto[letra]
+    palavras_junto_inverso = palavras_junto[::-1]
 
     print(frase, palavras_junto_inverso)
 
-    if palavras_junto_inverso == palavras_junto:
-        print('palindromo perfeita')
-    else:
-        print('não é um palindromo')
+    print(palavras_junto_inverso == palavras_junto)
 
     palindrome_one = 'ovo'
     palindrome_two = 'Natan'
@@ -88,17 +82,12 @@ print(len(titulo3))
 frase = str(input('digite uma frase: ')).upper()
 palavra = frase.split()
 palavras_junto = ''.join(palavra)
-palavras_junto_inverso = ''
-
-for letra in range(len(palavras_junto) - 1, -1, -1):
-    palavras_junto_inverso += palavras_junto[letra]
+palavras_junto_inverso = palavras_junto[::-1]
 
 print(frase, palavras_junto_inverso)
 
-if palavras_junto_inverso == palavras_junto:
-    print('palindromo perfeita')
-else:
-    print('não é um palindromo')
+print(palavras_junto_inverso == palavras_junto)
+    
 
 
 
