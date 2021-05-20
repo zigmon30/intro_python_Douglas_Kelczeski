@@ -8,79 +8,6 @@
 '''
 
 ## Funcoes
-
-def ola():
-    print('ola, mundo!')
-    print('essa é uma função em python!')
-
-ola()
-
-
-# Define a funcao
-def sum(x=3, y=5):
-    print("x: " + str(x))
-    print("y: " + str(y))
-    return x + y
-
-# Chamada simples de funcao
-x = 1
-y = 2
-z = sum(x, y)
-print(z)
-
-# Chamada de funcao com parametro sem ordem
-z = sum(y=10, x=13)
-print(z)
-
-# Utiliza valor padrao dos parametros
-z = sum()
-print(z)
-
-# PACKING E UNPACKING
-# Atribuicao para mais de uma variável
-a, b = x, y
-print(f'a: {a}, b:{b}')
-
-list = [1, 2, 3]
-a, b, c = list
-print(f'a: {a}, b:{b}, c:{c}')
-
-# Ignorando um valor
-a, b, _ = list
-print(f'a: {a}, b:{b},')
-
-# Multiplos valores (*)
-a, *resto = list
-print(f'a: {a}, resto: {resto}')
-
-# troca de valores
-a, b = b, a
-print(f'a: {a}, b:{b}')
-
-
-## CONDICIONAIS
-
-temperature = 4
-if temperature <= 0:
-    print('Solido')
-elif temperature > 0 and temperature < 100:
-    print('Liquido')
-else:
-    print('Gasoso')
-
-# Notacao matematica
-if 0 < temperature < 100:
-    print('Liquido')
-
-
-## Operador ternario
-# var = resultado_condicao_verdadeitra if condicao else resultado_condicao_false
-valor = 4
-positivo = True if valor > 0 else False
-print(positivo)
-
-
-###
 # Exercicios
 ###
 
@@ -93,6 +20,21 @@ lista1 = [1, 2, 3]
 lista2 = [1, 2, 3]
 comparando = compara_listas(lista1, lista2)
 print(comparando)
+
 # 2) Crie uma funcao que verifica se duas strings são palindromes perfeitas. Faca as 'limpeza'/sanitizacao necessarias.  Retorne True ou False.
-#
+frase = str(input('digite uma frase: ')).upper()
+def compara_palindromo(frase):
+    palavra = frase.split()
+    palavras_junto = ''.join(palavra)
+    palavras_junto_inverso = palavras_junto[::-1]
+    resultado_palindrome = True if palavras_junto_inverso == palavras_junto else False
+    return resultado_palindrome
+
+palindrome = compara_palindromo(frase)
+print(palindrome)
+
+'''lista1 = [1, 2, 3]
+lista2 = [1, 2, 3]
+comparando = compara_listas(lista1, lista2)
+'''
 # OBS.: Utilize apenas o que foi estudado ate agora
