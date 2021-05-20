@@ -1,33 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@zigmon30 
-alegume
-/
-intro-python
-3
-34
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-intro-python/104.py /
-@alegume
-alegume 104 updated
-Latest commit 4d57d1b 15 days ago
- History
- 1 contributor
-84 lines (64 sloc)  1.68 KB
- 
 #!/usr/bin/python3
 
 '''
@@ -38,6 +8,13 @@ Latest commit 4d57d1b 15 days ago
 '''
 
 ## Funcoes
+
+def ola():
+    print('ola, mundo!')
+    print('essa é uma função em python!')
+
+ola()
+
 
 # Define a funcao
 def sum(x=3, y=5):
@@ -108,20 +85,14 @@ print(positivo)
 ###
 
 # 1) Crie uma funcao que receba duas listas e verifique se elas são iguais. Cada elemento e sua ordem devem ser o mesmo. Retorne True ou False.
-#
+def compara_listas(lista1, lista2):
+    resultado = True if lista1 == lista2 else False
+    return resultado
+
+lista1 = [1, 2, 3]
+lista2 = [1, 2, 3]
+comparando = compara_listas(lista1, lista2)
+print(comparando)
 # 2) Crie uma funcao que verifica se duas strings são palindromes perfeitas. Faca as 'limpeza'/sanitizacao necessarias.  Retorne True ou False.
 #
 # OBS.: Utilize apenas o que foi estudado ate agora
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
