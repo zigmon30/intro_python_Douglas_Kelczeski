@@ -25,7 +25,7 @@ print(len(tuple))
 
 # encerra o script sem saida de erro
 # comente ou mude de linha para estudar o resto do arquivo
-sys.exit(0)
+
 
 # iteracao identica
 for p in list:
@@ -90,5 +90,12 @@ print(type(tuple1))
 ###
 
 # 1) Imprima os metodos disponiveis para uma lista e para uma tupla
+print(f'\n\nex1 \nmetodos de uma tupla: \n\n {dir(())}\n\n')
+print(f'metodos de uma lista: \n\n {dir([])}\n\n')
+#sys.exit(0)
 # 2) Faca um metodo para retornar apenas as diferencas entre as duas de metodos
+tupla = print(f'\n\nex1 \nmetodos de uma tupla: \n\n {dir(())}\n\n')
+print(tupla)
+
+
 # 3) Adicione as coordenadas (latitude, longitude) para os dicts professor1, professor2 e professor3. Copie os dicts do arquivo 106.py. As coordenadas precisam ser inseparaveis e imutaveis.
