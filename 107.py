@@ -1,33 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
-
-@zigmon30
-alegume
-/
-intro-python
-3
-35
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-intro-python/107.py /
-@alegume
-alegume 107 updated
-Latest commit adcd485 8 days ago
- History
- 1 contributor
-94 lines (67 sloc)  2.57 KB
-
 #!/usr/bin/python3
 
 import sys
