@@ -141,4 +141,22 @@ print(f'exercicio 5:\nlista multiplos de 3  de 0 a 100: {multiplos_de_3}')
 
 
 # 6) Faca uma funcao para encontrar os numeros primos no intervalo [2, 10), mas nao utilize a clausula else do for
+
+print(f'exercicio 6:\n')
+
+n = int(input("Verificar numeros primos ate: "))
+
+mult=0
+
+for count in range(2,n):
+    if (n % count == 0):
+        print("Múltiplo de",count)
+        mult += 1
+
+if(mult==0):
+    print("É primo")
+else:
+    print("Tem",mult," múltiplos acima de 2 e abaixo de",n)
+
+
 sys.exit(0)
