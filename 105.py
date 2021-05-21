@@ -129,8 +129,16 @@ print(f'exercicio 3:\nlista misturada{lista_2}')
 print(f'os numeros impares são: {lista_impar(lista_2)}\n')
 
 ## usando a string: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+print(f'exercicio 4:\n')
+
+frase = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+print(f'{frase.split()}, {len(frase)}\n')
 # 4) Conte quantas palavras de tamanho >= 5 existe nessa string. Faca uma vez sem usar list comprehension e depois usando list comprehension.
 
 # 5) Usando list comprehension, crie uma lista com os multiplos de 3 de 0 ate 100
+multiplos_de_3 = [i for i in range(101) if i % 3 == 0]
+print(f'exercicio 5:\nlista multiplos de 3  de 0 a 100: {multiplos_de_3}')
+
+
 # 6) Faca uma funcao para encontrar os numeros primos no intervalo [2, 10), mas nao utilize a clausula else do for
 sys.exit(0)
