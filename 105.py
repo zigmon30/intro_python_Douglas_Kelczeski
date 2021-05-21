@@ -9,7 +9,7 @@ import sys
     2) Crie uma lista com os numeros de 0 ate 99999999999999999999999999. Depois crie um loop para percorrer a lista ateh encontrar o primeiro multiplo de 5.
     OBS.: Use sua linguagem de programacao favorita. Nao use funcoes/metodos prontos.
 '''
-
+'''
 ## Loops
 
 i = 1
@@ -20,7 +20,7 @@ while (i <= 10):
     i += 1
 
 # Aborta o script
-sys.exit(0)
+
 
 list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -85,21 +85,52 @@ for n in range(2, 10):
         # Se nao encontrou um fator
         print(n, 'eh numero primo')
 
-
+'''
 ###
 # Exercicios
 ###
 
+
+
+
 ## Usando a lista: ['a','b','c']
 # 1) Faca um loop dentro de uma funcao que irah retornar: ['A','B','C']
+lista = ['a','b','c']
 
+def caixa_alta(lista):
+    maiuscula = [x.upper() for x in lista]
+    return maiuscula
+
+print(f'exercicio 1:\n{lista}')
+print(f'{caixa_alta(lista)}\n')
 ## Usando a lista: [0, 1, 7, 4, 5]
 # 2) Faca um loop dentro de uma funcao para retornar a soma de todos os elementos da listas. A funcao deve receber a lista como parametro.
+lista_1 = [0, 1, 7, 4, 5]
+
+def soma_lista(lista_1):
+    soma_de_elementos = 0;
+    for x in lista_1:
+        soma_de_elementos += x
+    return soma_de_elementos
+
+print(f'exercicio 2:\n{lista_1}')
+print(f'a soma é: {soma_lista(lista_1)}\n')
 # 3) Crie uma funcao que receba uma lista e retorne outra lista composta pelos os numeros impares da lista recebida
+lista_2 = [0, 1, 7, 4, 5, 15, 20, 24]
+
+def lista_impar(lista_2):
+    lista_3 = []
+    for x in lista_2:
+        if x % 2 == 1:
+            lista_3.append(x)
+    return lista_3
+
+print(f'exercicio 3:\nlista misturada{lista_2}')
+print(f'os numeros impares são: {lista_impar(lista_2)}\n')
 
 ## usando a string: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
 # 4) Conte quantas palavras de tamanho >= 5 existe nessa string. Faca uma vez sem usar list comprehension e depois usando list comprehension.
 
 # 5) Usando list comprehension, crie uma lista com os multiplos de 3 de 0 ate 100
 # 6) Faca uma funcao para encontrar os numeros primos no intervalo [2, 10), mas nao utilize a clausula else do for
-
+sys.exit(0)
