@@ -30,7 +30,8 @@ def compara_palindromo(frase, frase1):
 
     palavras_junto1 = ''.join(palavra)
     palavras_junto2 = ''.join(palavra1)
-    resultado_palindrome = True if palavras_junto1 == palavras_junto2 else False
+    palavras_junto2_inverso = palavras_junto2[:: - 1]
+    resultado_palindrome = True if palavras_junto1 == palavras_junto2_inverso else False
     return resultado_palindrome
 
 palindrome = compara_palindromo(frase, frase1)
