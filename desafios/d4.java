@@ -1,4 +1,4 @@
-public class Main {
+public class d4 {
 
 	public static void main(String[] args) {
 // ex1 ##########################################################

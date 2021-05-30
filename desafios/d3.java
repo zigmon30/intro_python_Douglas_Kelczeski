@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class d3 {
 
 	public static void main(String[] args) {
 
@@ -13,9 +13,9 @@ public class Main {
 		s1 = sc.nextLine();
 		System.out.println("Voce digitou: ");
 		System.out.println(s1);
-		String s1_invertida = new StringBuilder(s1).reverse().toString();
+		
     System.out.println("palavra invertida: ");
-		System.out.println(s1_invertida);
+		System.out.println();
 
 		sc.close();
 	}
