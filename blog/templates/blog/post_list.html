@@ -2,12 +2,18 @@
 
 {% block content %}
     {% for post in posts %}
-        <article class="post">
-            <time class="date">
-                {{ post.published_date }}
-            </time>
-            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+        <div class="post">
+            <div class="date">
+                <p>{{ post.published_date }}</p>
+            </div>
+            <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title|title }}</a></h1>
             <p>{{ post.text|linebreaksbr }}</p>
-        </article>
+            <a href="{% url 'post_detail' pk=post.pk %}">
+              Comments: {{ post.comments.count }}
+            </a>
+            <hr />
+        </div>
+    {% empty %}
+      <<h1>Sorry, no posts =/</h1>
     {% endfor %}
-{% endblock %}
+{% endblock content %}
