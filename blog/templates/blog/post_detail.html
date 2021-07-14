@@ -16,7 +16,7 @@
                 {{ post.published_date }}
             </div>
         {% else %}
-            <a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publish</a>
+            <a class="btn btn-default" href="{% url 'post_publish' pk=post.pk %}">Publicar</a>
         {% endif %}
 
         <hr>
@@ -28,9 +28,10 @@
         </div>
     {% empty %}
         <p>Nenhum comentario :(</p>
-        <a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Adicionar comentario</a>
 
     {% endfor %}
+    <a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">Adicionar comentario</a>
+
     {% endblock %}
 
 
